@@ -1,0 +1,10 @@
+/vendor
+.env
+.DS_Store
+resources/views/typings
+resources/views/app/**/*.js
+resources/views/app/**/*.map
+resources/views/node_modules
+resources/views/jspm_packages
+resources/views/bower_components
+*.log
