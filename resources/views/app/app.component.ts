@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
-//import { Router } from '@angular/router';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import { HomeComponent } from './home.component';
 //import { Link } from './classes/link.entity';
 
 @Component({
 	selector: 'my-app',
-	template: '<h1>test</h1>'
+    templateUrl: 'app/app.component.template.html',
+    directives: [ROUTER_DIRECTIVES],
+    precompile: [
+        HomeComponent
+    ],
+    providers: [
+    ],
+
 })
 
 export class AppComponent {
