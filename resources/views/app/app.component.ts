@@ -5,7 +5,8 @@ import { HomeComponent } from './home.component';
 
 @Component({
 	selector: 'my-app',
-    templateUrl: 'app/app.component.template.html',
+	template: '<h1>{{title}}</h1><h3>{{detail}}</h3>',
+//    templateUrl: 'app/app.component.template.html',
     directives: [ROUTER_DIRECTIVES],
     precompile: [
         HomeComponent
@@ -16,6 +17,8 @@ import { HomeComponent } from './home.component';
 })
 
 export class AppComponent {
+	title = "Heading one";
+	details = "details go here";
 //	links = [
 //		{ "name": "home", "address": "home" }
 //	];
