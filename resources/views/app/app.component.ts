@@ -5,8 +5,7 @@ import { HomeComponent } from './home.component';
 
 @Component({
 	selector: 'my-app',
-	template: '<h1>{{title}}</h1><h3>{{detail}}</h3>',
-//    templateUrl: 'app/app.component.template.html',
+    templateUrl: 'app/app.component.template.html',
     directives: [ROUTER_DIRECTIVES],
     precompile: [
         HomeComponent
